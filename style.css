@@ -1,8 +1,24 @@
 .banner {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image.png);
+    background-image: linear-gradient( rgba(8, 8, 8, 0.8), rgba(8, 8, 8, 0.8)), url(./img/image.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
 }
+
+.imgOpacity {
+    transition: opacity 0.3s;
+  }
+
+  .imgOpacity:hover {
+    opacity: 0.7; 
+  }
+
+  .number-style {
+    font-size: 3rem;       
+    font-weight: bold;     
+    color: #00cfff;        
+    font-family: Arial, Helvetica, sans-serif;       
+  }
+  
