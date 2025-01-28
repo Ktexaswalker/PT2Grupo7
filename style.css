@@ -24,7 +24,49 @@
 
 .imgSlider {
   background-image: url(./img/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
+
+/* .carousel-item:nth-child(1).active{
+  background-image: url('./img/banner1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  padding: 0;
+  opacity: 0;
+} */
+
+/* Fondo del segundo slide */
+/* .carousel-item:nth-child(2).active {
+  background-image: url('./img/g5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  opacity: 0; */
+/* }
+
+.carousel-item {
+  transition: opacity 7s ease-in-out;
+} */
+
+.opensans {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  color: #777;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 
 h2 {
   font-family: "Raleway", serif;
@@ -57,4 +99,22 @@ p {
 .icon-hover:hover {
   transform: scale(1.1); 
   color: #424649 !important; 
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.zoom-effect {
+  width: 100%; 
+  height: auto;
+  transition: transform 0.8s ease; 
+}
+
+.image-container:hover .zoom-effect {
+  transform: scale(1.5); 
+}
+
+.front {
+  z-index: 1000;
 }
