@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid bg-body ps-0 ms-0 mt-3 pt-3">
         <!-- nav -->
         <!-- <div class="row">
             <div class="col text-end bg-light d-block d-lg-none">
@@ -34,36 +34,64 @@
                 <img src="./img/logo.png" alt="">
             </div>
         </div> -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img class="img-fluid" src="./img/logo.png" alt="">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-body z-1 front pb-3 pt-3">
+            <div class="container-fluid position-fixed top-0 ps-0 ms-0 bg-body">
+                <img class="img-fluid d-block d-lg-none ms-4" src="./img/logo.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                       </svg>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-5">
+                <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo03">
+                    <img class="img-fluid d-none d-lg-block" src="./img/logo.png" alt="">
+                    <ul class="navbar-nav me-5 ms-3 ps-3">
                         <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#features">FEATURES</a></span></li>
                         <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#about">ABOUT</a></span></li>
                         <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#services">SERVICES</a></span>
-                        <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none d-none d-lg-block" href="#showreel2">SHOWREEL</a><a class="text-secondary text-decoration-none d-lg-none" href="#showreel">SHOWREEL</a></span></li>
+                        <li class="navbar-item d-none d-sm-block"><span class="nav-link text-secondary h6 mt-2">
+                            <a class="text-secondary text-decoration-none d-none d-lg-block d-xl-block d-xxl-none" href="#showreel">SHOWREEL</a>
+                            <a class="text-secondary text-decoration-none d-none d-sm-block d-lg-none d-xl-none d-xxl-block" href="#showreel2">SHOWREEL</a>
+                        </span></li>
                         <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#gallery">GALLERY</a></span></li>
                         <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#team">TEAM</a></span></li>
                         <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#news">NEWS</a></span></li>
                         <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#contact">CONTACT</a></span></li>
-                        <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="#shop">SHOP</a></span></li>
+                        <li class="navbar-item"><span class="nav-link text-secondary h6 mt-2"><a class="text-secondary text-decoration-none" href="https://demos.famethemes.com/onepress/shop/">SHOP</a></span></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
         <!-- slider we are... -->
         <div class="row">
-            <div class="col text-center bg-secondary p-0">
+            <div class="col text-center bg-secondary p-0 m-0 imgSlider">
                 <!-- <img src="./img/banner1.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;"> -->
-                 <div class="imgSlider">
-                    imgSlider
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="p-5 d-flex justify-content-center">
+                                <div class="col-6 text-center">
+                                    <h2 class="hero-large-text pt-5">We are <span>ONEPRESS</span></h2>
+                                    <div class="">
+                                        <p>Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                                    </div>
+                                    <a href="#services" class="btn btn-info text-light mt-5 mb-5 btn-lg ms-2">Our Services</a>
+                                    <a href="#contact" class="btn btn-outline-secondary btn-lg ms-2">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="p-5 d-flex justify-content-center">
+                                <div class="col-6 text-center">
+                                    <h2 class="hero-large-text pt-5">We are <span>PERFECTION</span></h2>
+                                    <div class="">
+                                        <p>Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                                    </div>
+                                    <a href="#services" class="btn btn-info btn-lg text-light mt-5 mb-5 ms-2 opensans">Our Services</a>
+                                    <a href="#contact" class="btn btn-outline-secondary btn-lg ms-2 opensans">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                  </div>
             </div>
         </div>
@@ -119,7 +147,7 @@
             </div>
         </div>
         <!-- Our services -->
-        <div class="row bg-light mt-4 pt-4 pb-5" id="service">
+        <div class="row bg-light mt-4 pt-4 pb-5" id="services">
             <div class="col text-center mt-4 pt-4">
                 <p>SECTION SUBTITLE</p>
                 <h2>Our services</h2>
@@ -191,8 +219,8 @@
             </div>
         </div>
         <!-- Parallax Effect xxl sm md -->
-        <div class="row pb-4" id="showreel">
-            <div class="col text-center d-none d-sm-block d-lg-none d-xxl-block banner">
+        <div class="row pb-4" id="showreel2">
+            <div class="col text-center d-none d-sm-block d-lg-none d-xl-none d-xxl-block banner">
                 <div class="container text-center">
                     <div class="row mt-5 mb-5">
                         <span><a class="text-decoration-none" href="https://www.youtube.com/watch?v=yUCFRL43Zm4" target="_blank"><i class="d-none d-lg-block fa-regular fa-circle-play fa-5x text-light"></i></a></span>
@@ -202,7 +230,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4 mb-4 pt-4 pb-4 bg-light">
+        <div class="row mt-4 mb-4 pt-4 pb-4 bg-light" id="gallery">
             <div class="col text-center pb-4">
               <h2>GALLERY</h2>
                 <p id="filter-buttons">
@@ -217,7 +245,7 @@
                 </p>
                 <div class="container-fluid">
                     <div class="row">
-                        <img src="./img/g1.jpeg" class="img-fluid col-lg-2 col-sm-3 col-6 offset-lg-1 gallery-img ps-0 pe-1 filter-img grid" alt="">
+                        <!-- <img src="./img/g1.jpeg" class="img-fluid col-lg-2 col-sm-3 col-6 offset-lg-1 gallery-img ps-0 pe-1 filter-img grid" alt="">
                         <img src="./img/g2.jpg" class="img-fluid col-lg-2 col-sm-3 col-6 gallery-img ps-0 pe-1 filter-img grid slider" alt="">
                         <img src="./img/g3.jpg" class="img-fluid col-lg-2 col-sm-3 col-6 gallery-img ps-0 pe-1 filter-img carousel" alt="">
                         <img src="./img/g4.jpg" class="img-fluid col-lg-2 col-sm-3 col-6 offset-sm-end gallery-img ps-0 pe-1 filter-img masonry justified" alt="">
@@ -226,13 +254,43 @@
                         <img src="./img/g7.jpeg" class="img-fluid col-lg-2 col-sm-3 col-6 gallery-img ps-0 pe-1 filter-img grid" alt="">
                         <img src="./img/g8.jpeg" class="img-fluid col-lg-2 col-sm-3 col-6 gallery-img ps-0 pe-1 filter-img grid" alt="">
                         <img src="./img/g9.jpg" class="img-fluid col-lg-2 col-sm-3 col-6 offset-sm-3 offset-lg-0 gallery-img ps-0 pe-1 filter-img slider masonry" alt="">
-                        <img src="./img/g10.jpeg" class="img-fluid col-lg-2 col-sm-3 col-6 gallery-img ps-0 pe-1 pe-lg-0 filter-img grid carousel justified" alt="">
+                        <img src="./img/g10.jpeg" class="img-fluid col-lg-2 col-sm-3 col-6 gallery-img ps-0 pe-1 pe-lg-0 filter-img grid carousel justified" alt=""> -->
+                        <div class="image-container col-lg-2 col-sm-3 col-6 offset-lg-1 ps-0 pe-1 filter-img grid">
+                            <img src="./img/g1.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid slider">
+                            <img src="./img/g2.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img carousel">
+                            <img src="./img/g3.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 offset-sm-end ps-0 pe-1 filter-img masonry justified">
+                            <img src="./img/g4.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img slider">
+                            <img src="./img/g5.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 offset-lg-1 offset-sm-0 ps-0 pe-1 filter-img carousel">
+                            <img src="./img/g6.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 pb-1 filter-img grid">
+                            <img src="./img/g7.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid">
+                            <img src="./img/g8.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 offset-sm-3 offset-lg-0 ps-0 pe-1 filter-img slider masonry">
+                            <img src="./img/g9.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
+                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid carousel justified">
+                            <img src="./img/g10.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
+                          </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Parallax Effect lg xl -->
-        <div class="row mt-4">
+        <div class="row mt-4" id="showreel">
             <div class="col text-center d-none d-lg-block d-xxl-none banner">
                 <div class="container text-center">
                     <div class="row mt-5 mb-5">
@@ -266,7 +324,7 @@
             </div>
         </div>
         <!-- Our team -->
-        <div class="row mt-4 bg-light">
+        <div class="row mt-4 bg-light" id="team">
             <div class="col text-center mt-5">
                 <p>SECTION SUBTITLE</p>
                 <h2>OUR TEAM</h2>
@@ -309,7 +367,7 @@
             </div>
         </div>
         <!-- Lastest news -->
-        <div class="row mt-4">
+        <div class="row mt-4" id="news">
             <div class="col text-center">
                 <p>SECTION SUBTITLE</p>
                 <h2>LASTEST NEWS</h2>
@@ -372,7 +430,7 @@
         </div>
         <hr class="text-light">
       <!-- get in touch -->
-      <div class="container-fluid mt-4 bg-light">
+      <div class="container-fluid mt-4 bg-light" id="contact">
         <div class="row text-center">
             <div class="col">
                 <p>SECTION SUBTITLE</p>
@@ -573,6 +631,39 @@
         }, false)
     })
     })()
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var carousel = document.getElementById("carouselExampleSlidesOnly");
+        var backgrounds = [
+            "url('img/banner1.jpg')",
+            "url('img/g5.jpg')"
+        ];
+
+        // Crear un div para el fondo y colocarlo dentro del carrusel
+        var backgroundDiv = document.createElement("div");
+            backgroundDiv.style.position = "absolute";
+            backgroundDiv.style.top = "0";
+            backgroundDiv.style.left = "0";
+            backgroundDiv.style.width = "100%";
+            backgroundDiv.style.height = "100%";
+            backgroundDiv.style.backgroundSize = "cover";
+            backgroundDiv.style.backgroundPosition = "center";
+            backgroundDiv.style.backgroundRepeat = "no-repeat";
+            backgroundDiv.style.transition = "opacity 1s ease-in-out";
+            backgroundDiv.style.opacity = "1";
+            carousel.appendChild(backgroundDiv);
+
+        // Evento para cambiar la imagen de fondo
+        carousel.addEventListener("slid.bs.carousel", function () {
+            var currentIndex = [...carousel.querySelectorAll(".carousel-item")].indexOf(carousel.querySelector(".active"));
+
+            backgroundDiv.style.opacity = "0"; // Se desvanece antes de cambiar
+            setTimeout(() => {
+                backgroundDiv.style.backgroundImage = backgrounds[currentIndex];
+                backgroundDiv.style.opacity = "1"; // Se vuelve visible con la nueva imagen
+            }, 2000);
+        });
+    });
 </script>
 </body>
 </html>
