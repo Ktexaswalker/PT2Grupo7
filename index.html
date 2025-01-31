@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -65,29 +65,45 @@
         <div class="row">
             <div class="col text-center bg-secondary p-0 m-0 imgSlider">
                 <!-- <img src="./img/banner1.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;"> -->
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="9000">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="p-5 d-flex justify-content-center">
-                                <div class="col-6 text-center">
-                                    <h2 class="hero-large-text pt-5">We are <span>ONEPRESS</span></h2>
-                                    <div class="">
-                                        <p>Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                        <div class="carousel-item active" data-bs-interval="9000">
+                            <div class="imgSlider">
+                                <div class="p-5 d-flex justify-content-center">
+                                    <div class="col-12 text-center">
+                                        <div class="d-none d-sm-block">
+                                            <h2 class="hero-large-text pt-5 text-light">We are <span class="animate__animated animate__flipInX">ONEPRESS</span></h2>
+                                            <p>Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                                            <a href="#services" class="btn btn-info text-light mt-5 mb-5 btn-lg ms-2 rounded-0">Our Services</a>
+                                            <a href="#contact" class="btn btn-outline-secondary btn-lg ms-2 rounded-0">Get Started</a>
+                                        </div>
+                                        <div class="d-block d-md-none">
+                                            <h2 class="hero-large-text pt-5 fs-1">We are <span class="animate__animated animate__flipInX">PERFECTION</span></h2>
+                                            <p class="fs-6">Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                                            <a href="#services" class="btn btn-info text-light mt-5 mb-5 btn-sm ms-2 rounded-0">Our Services</a>
+                                            <a href="#contact" class="btn btn-outline-secondary ms-2 btn-sm rounded-0">Get Started</a>
+                                        </div>
                                     </div>
-                                    <a href="#services" class="btn btn-info text-light mt-5 mb-5 btn-lg ms-2">Our Services</a>
-                                    <a href="#contact" class="btn btn-outline-secondary btn-lg ms-2">Get Started</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="p-5 d-flex justify-content-center">
-                                <div class="col-6 text-center">
-                                    <h2 class="hero-large-text pt-5">We are <span>PERFECTION</span></h2>
-                                    <div class="">
-                                        <p>Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                        <div class="carousel-item" data-bs-interval="9000">
+                            <div class="imgSlider2">
+                                <div class="p-5 d-flex justify-content-center">
+                                    <div class="col-10 col-lg-6 text-center">
+                                        <div class="d-none d-sm-block">
+                                            <h2 class="hero-large-text pt-5 text-light">We are <span class="animate__animated animate__flipInX">ONEPRESS</span></h2>
+                                            <p>Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                                            <a href="#services" class="btn btn-info text-light mt-5 mb-5 btn-lg ms-2 rounded-0">Our Services</a>
+                                            <a href="#contact" class="btn btn-outline-secondary btn-lg ms-2 rounded-0">Get Started</a>
+                                        </div>
+                                        <div class="d-block d-md-none">
+                                            <h2 class="hero-large-text pt-5 fs-1">We are <span class="animate__animated animate__flipInX">PERFECTION</span></h2>
+                                            <p class="fs-6">Morbi tempus porta nunc <strong>pharetra quisque</strong> ligula imperdiet posuere<br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.</p>
+                                            <a href="#services" class="btn btn-info text-light mt-5 mb-5 btn-sm ms-2 rounded-0">Our Services</a>
+                                            <a href="#contact" class="btn btn-outline-secondary ms-2 btn-sm rounded-0">Get Started</a>
+                                        </div>
                                     </div>
-                                    <a href="#services" class="btn btn-info btn-lg text-light mt-5 mb-5 ms-2 opensans">Our Services</a>
-                                    <a href="#contact" class="btn btn-outline-secondary btn-lg ms-2 opensans">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +112,7 @@
             </div>
         </div>
         <!-- features -->
+        <section class="animate__animated animate__fadeInUp animate__repeat-1">
         <div class="row bg-light mt-4 pt-4 pb-4" id="features">
             <div class="col text-center mt-4">
                 <p>WHY CHOSSE US</p>
@@ -122,7 +139,9 @@
                 </div>
             </div>
         </div>
+        </section>
         <!-- About us -->
+        <section class="animate__animated animate__fadeInUp animate__repeat-1">
         <div class="row mt-4 pt-4 pb-4" id="about">
             <div class="col text-center mt-4">
                 <p>SECTION SUBTITLE</p>
@@ -146,7 +165,9 @@
                 </div>
             </div>
         </div>
+        </section>
         <!-- Our services -->
+        <section class="animate__animated animate__fadeInUp animate__repeat-1">
         <div class="row bg-light mt-4 pt-4 pb-5" id="services">
             <div class="col text-center mt-4 pt-4">
                 <p>SECTION SUBTITLE</p>
@@ -218,8 +239,10 @@
                 </div>
             </div>
         </div>
+        </section>
         <!-- Parallax Effect xxl sm md -->
-        <div class="row pb-4" id="showreel2">
+        <section class="animate__animated animate__fadeInUp animate__repeat-1">
+        <div class="row pb-4 animate__animated animate__fadeInUp" id="showreel2">
             <div class="col text-center d-none d-sm-block d-lg-none d-xl-none d-xxl-block banner">
                 <div class="container text-center">
                     <div class="row mt-5 mb-5">
@@ -230,7 +253,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4 mb-4 pt-4 pb-4 bg-light" id="gallery">
+        <div class="row mt-4 mb-4 pt-4 pb-4 bg-light animate__animated animate__fadeInUp" id="gallery">
             <div class="col text-center pb-4">
               <h2>GALLERY</h2>
                 <p id="filter-buttons">
@@ -257,39 +280,40 @@
                         <img src="./img/g10.jpeg" class="img-fluid col-lg-2 col-sm-3 col-6 gallery-img ps-0 pe-1 pe-lg-0 filter-img grid carousel justified" alt=""> -->
                         <div class="image-container col-lg-2 col-sm-3 col-6 offset-lg-1 ps-0 pe-1 filter-img grid">
                             <img src="./img/g1.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid slider">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid slider">
                             <img src="./img/g2.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img carousel">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img carousel">
                             <img src="./img/g3.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 offset-sm-end ps-0 pe-1 filter-img masonry justified">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 offset-sm-end ps-0 pe-1 filter-img masonry justified">
                             <img src="./img/g4.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img slider">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img slider">
                             <img src="./img/g5.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 offset-lg-1 offset-sm-0 ps-0 pe-1 filter-img carousel">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 offset-lg-1 offset-sm-0 ps-0 pe-1 filter-img carousel">
                             <img src="./img/g6.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 pb-1 filter-img grid">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 pb-1 filter-img grid">
                             <img src="./img/g7.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid">
                             <img src="./img/g8.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 offset-sm-3 offset-lg-0 ps-0 pe-1 filter-img slider masonry">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 offset-sm-3 offset-lg-0 ps-0 pe-1 filter-img slider masonry">
                             <img src="./img/g9.jpg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
-                          <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid carousel justified">
+                        </div>
+                        <div class="image-container col-lg-2 col-sm-3 col-6 ps-0 pe-1 filter-img grid carousel justified">
                             <img src="./img/g10.jpeg" class="img-fluid gallery-img zoom-effect" alt="Imagen">
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Parallax Effect lg xl -->
+        <section class="">
         <div class="row mt-4" id="showreel">
             <div class="col text-center d-none d-lg-block d-xxl-none banner">
                 <div class="container text-center">
@@ -301,7 +325,9 @@
                 </div>
             </div>
         </div>
+        </section>
         <!-- Numeros -->
+        <section class="animate__animated animate__fadeInUp animate__repeat-1">
         <div class="row mt-4">
             <div class="col text-center">
                 <p>SOME FUN ACTS ABOUT OUR AGENCY</p>
@@ -323,7 +349,9 @@
                 </div>
             </div>
         </div>
+        </section>
         <!-- Our team -->
+        <section class="animate__animated animate__fadeInUp">
         <div class="row mt-4 bg-light" id="team">
             <div class="col text-center mt-5">
                 <p>SECTION SUBTITLE</p>
@@ -366,15 +394,18 @@
                 </div>
             </div>
         </div>
+        </section>
         <!-- Lastest news -->
+        <section class="animate__animated animate__fadeInUp">
         <div class="row mt-4" id="news">
             <div class="col text-center">
                 <p>SECTION SUBTITLE</p>
                 <h2>LASTEST NEWS</h2>
                 <div class="container text-start">
                     <div class="row">
+                        <hr>
                         <div class="col-xss-12 col-lg-4">
-                            <img src="./img/g4.jpg" class="imgOpacity img-fluid d-sm-none d-lg-block" alt="">
+                            <img src="./img/g4.jpg" class="imgOpacity img-fluid d-sm-none d-lg-block mb-3 bt-3" alt="">
                         </div>
                         <div class="col-xss-12 col-lg-8">
                             <nav aria-label="breadcrumb">
@@ -392,7 +423,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xss-12 col-lg-4">
-                            <img src="./img/g6.jpeg" class="imgOpacity img-fluid d-sm-none d-lg-block" alt="">
+                            <img src="./img/g6.jpeg" class="imgOpacity img-fluid d-sm-none d-lg-block mb-3 bt-3" alt="">
                         </div>
                         <div class="col-xss-12 col-lg-8">
                             <nav aria-label="breadcrumb">
@@ -407,7 +438,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xxs-12 col-lg-4">
-                            <img src="./img/g9.jpg" class="imgOpacity img-fluid d-sm-none d-lg-block" alt="">
+                            <img src="./img/g9.jpg" class="imgOpacity img-fluid d-sm-none d-lg-block mb-3 bt-3" alt="">
                         </div>
                         <div class="col-xss-12 col-lg-8">
                             <nav aria-label="breadcrumb">
@@ -428,8 +459,10 @@
                 </div>
             </div>
         </div>
+        </section>
         <hr class="text-light">
       <!-- get in touch -->
+      <section class="animate__animated animate__fadeInUp">
       <div class="container-fluid mt-4 bg-light" id="contact">
         <div class="row text-center">
             <div class="col">
@@ -535,20 +568,22 @@
 </div>
 
 </div>
-<div class="container-fluid"></div>
+<div class="container-fluid animate__animated animate__fadeInUp"></div>
     <footer class="bg-dark text-light pt-4 ps-3 pe-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 mb-3">
                     <h5>JOIN OUR NEWSLETTER</h5>
-                    <div class="row align-items-center g-0">
-                        <div class="col-12 col-lg-8">
-                            <input type="email" id="emailFooter" name="emailFooter" class="form-control bg-dark" placeholder="Enter your e-mail">
+                    <form class="needs-validation" novalidate>
+                        <div class="row align-items-center g-0">
+                            <div class="col-12 col-lg-8">
+                                <input type="email" id="emailFooter" name="emailFooter" value="" class="form-control bg-dark text-light" placeholder="Enter your e-mail" aria-describedby="validEmail2Feedback" required>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <button type="submit" class="btn btn-info w-100">SUBSCRIBE</button>
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-4">
-                            <button type="button" class="btn btn-info w-100">SUBSCRIBE</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-12 col-sm-6 text-center">
                     <h5>KEEP UPDATED</h5>
@@ -594,20 +629,13 @@
             if (!img.dataset.originalClasses) {
                 img.dataset.originalClasses = img.className;
             }
-            // Ocultar imágenes que no coincidan con el filtro
             if (img.className.indexOf(c) > -1 || c === "") {
-                img.className = img.dataset.originalClasses; // Restaurar clases originales
+                img.className = img.dataset.originalClasses;
                 img.classList.remove("d-none");
             } else {
                 img.classList.add("d-none");
                 removeOffsets = true;
-                // Eliminar cualquier clase que comience con "offset-"
-                // img.className = img.className.replace(/\boffset-\S+/g, "").trim();
             }
-            // x[i].classList.add("d-none"); // Oculta todas las imágenes
-            // if (x[i].className.indexOf(c) > -1) {
-            //     x[i].classList.remove("d-none"); // Muestra solo las que coincidan
-            // }
         }
         if (removeOffsets == true) {
             for (let i = 0; i < x.length; i++) {
@@ -618,9 +646,7 @@
 
     (() => {
     'use strict'
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
-    // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
         if (!form.checkValidity()) {
@@ -633,36 +659,32 @@
     })()
 
     document.addEventListener("DOMContentLoaded", function () {
-        var carousel = document.getElementById("carouselExampleSlidesOnly");
-        var backgrounds = [
-            "url('img/banner1.jpg')",
-            "url('img/g5.jpg')"
-        ];
-
-        // Crear un div para el fondo y colocarlo dentro del carrusel
-        var backgroundDiv = document.createElement("div");
-            backgroundDiv.style.position = "absolute";
-            backgroundDiv.style.top = "0";
-            backgroundDiv.style.left = "0";
-            backgroundDiv.style.width = "100%";
-            backgroundDiv.style.height = "100%";
-            backgroundDiv.style.backgroundSize = "cover";
-            backgroundDiv.style.backgroundPosition = "center";
-            backgroundDiv.style.backgroundRepeat = "no-repeat";
-            backgroundDiv.style.transition = "opacity 1s ease-in-out";
-            backgroundDiv.style.opacity = "1";
-            carousel.appendChild(backgroundDiv);
-
-        // Evento para cambiar la imagen de fondo
-        carousel.addEventListener("slid.bs.carousel", function () {
-            var currentIndex = [...carousel.querySelectorAll(".carousel-item")].indexOf(carousel.querySelector(".active"));
-
-            backgroundDiv.style.opacity = "0"; // Se desvanece antes de cambiar
-            setTimeout(() => {
-                backgroundDiv.style.backgroundImage = backgrounds[currentIndex];
-                backgroundDiv.style.opacity = "1"; // Se vuelve visible con la nueva imagen
-            }, 2000);
-        });
+        const counters = document.querySelectorAll(".number-style");
+        const startCounter = (counter) => {
+            counter.classList.add("animated");
+            const target = parseInt(counter.innerText.replace(/\D/g, "")) || 0;
+            let count = 0;
+            const increment = Math.ceil(target / 50);
+            
+            const interval = setInterval(() => {
+                count += increment;
+                if (count >= target) {
+                    counter.innerText = target + (counter.innerText.includes("%") ? " %" : "");
+                    clearInterval(interval);
+                } else {
+                    counter.innerText = count + (counter.innerText.includes("%") ? " %" : "");
+                }
+            }, 30);
+        };
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCounter(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(counter => observer.observe(counter));
     });
 </script>
 </body>

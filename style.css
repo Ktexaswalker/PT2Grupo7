@@ -22,41 +22,29 @@
   font-family: Arial, Helvetica, sans-serif;       
 }
 
+/* hacer mediaquery del carrousel */
+
 .imgSlider {
   background-image: url(./img/banner1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: content-box;
+  height: 50vh;
   margin: 0;
   padding: 0;
 }
 
-/* .carousel-item:nth-child(1).active{
-  background-image: url('./img/banner1.jpg');
+.imgSlider2 {
+  background-image: url(./img/g5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: content-box;
-  padding: 0;
-  opacity: 0;
-} */
-
-/* Fondo del segundo slide */
-/* .carousel-item:nth-child(2).active {
-  background-image: url('./img/g5.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: content-box;
+  height: 50vh;
   margin: 0;
   padding: 0;
-  opacity: 0; */
-/* }
-
-.carousel-item {
-  transition: opacity 7s ease-in-out;
-} */
+}
 
 .opensans {
   font-family: "Open Sans", serif;
@@ -117,4 +105,23 @@ p {
 
 .front {
   z-index: 1000;
+}
+
+.animate__flipInX {
+  --animate-duration: 5s;
+}
+
+.number-style {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.number-style.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-large-text {
+  font-size: 5rem;
 }
