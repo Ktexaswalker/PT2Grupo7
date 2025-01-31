@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
                 <img src="./img/logo.png" alt="">
             </div>
         </div> -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-body z-1 front pb-3 pt-3">
+        <nav id="arriba" class="navbar navbar-expand-lg bg-body-tertiary bg-body z-1 front pb-3 pt-3">
             <div class="container-fluid position-fixed top-0 ps-0 ms-0 bg-body">
                 <img class="img-fluid d-block d-lg-none ms-4" src="./img/logo.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +69,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="9000">
                             <div class="imgSlider">
-                                <div class="p-5 d-flex justify-content-center">
+                                <div class="p-5 p-md-0 p-sm-0 d-flex justify-content-center">
                                     <div class="col-12 text-center">
                                         <div class="d-none d-sm-block">
                                             <h2 class="hero-large-text pt-5 text-light">We are <span class="animate__animated animate__flipInX">ONEPRESS</span></h2>
@@ -89,7 +89,7 @@
                         </div>
                         <div class="carousel-item" data-bs-interval="9000">
                             <div class="imgSlider2">
-                                <div class="p-5 d-flex justify-content-center">
+                                <div class="p-5 p-md-0 p-sm-0 d-flex justify-content-center">
                                     <div class="col-10 col-lg-6 text-center">
                                         <div class="d-none d-sm-block">
                                             <h2 class="hero-large-text pt-5 text-light">We are <span class="animate__animated animate__flipInX">ONEPRESS</span></h2>
@@ -141,7 +141,7 @@
         </div>
         </section>
         <!-- About us -->
-        <section class="animate__animated animate__fadeInUp animate__repeat-1">
+        <section">
         <div class="row mt-4 pt-4 pb-4" id="about">
             <div class="col text-center mt-4">
                 <p>SECTION SUBTITLE</p>
@@ -241,7 +241,7 @@
         </div>
         </section>
         <!-- Parallax Effect xxl sm md -->
-        <section class="animate__animated animate__fadeInUp animate__repeat-1">
+        <section>
         <div class="row pb-4 animate__animated animate__fadeInUp" id="showreel2">
             <div class="col text-center d-none d-sm-block d-lg-none d-xl-none d-xxl-block banner">
                 <div class="container text-center">
@@ -313,7 +313,7 @@
             </div>
         </div>
         <!-- Parallax Effect lg xl -->
-        <section class="">
+        <section>
         <div class="row mt-4" id="showreel">
             <div class="col text-center d-none d-lg-block d-xxl-none banner">
                 <div class="container text-center">
@@ -327,7 +327,7 @@
         </div>
         </section>
         <!-- Numeros -->
-        <section class="animate__animated animate__fadeInUp animate__repeat-1">
+        <section>
         <div class="row mt-4">
             <div class="col text-center">
                 <p>SOME FUN ACTS ABOUT OUR AGENCY</p>
@@ -351,7 +351,7 @@
         </div>
         </section>
         <!-- Our team -->
-        <section class="animate__animated animate__fadeInUp">
+        <section>
         <div class="row mt-4 bg-light" id="team">
             <div class="col text-center mt-5">
                 <p>SECTION SUBTITLE</p>
@@ -396,7 +396,7 @@
         </div>
         </section>
         <!-- Lastest news -->
-        <section class="animate__animated animate__fadeInUp">
+        <section>
         <div class="row mt-4" id="news">
             <div class="col text-center">
                 <p>SECTION SUBTITLE</p>
@@ -462,7 +462,7 @@
         </section>
         <hr class="text-light">
       <!-- get in touch -->
-      <section class="animate__animated animate__fadeInUp">
+      <section>
       <div class="container-fluid mt-4 bg-light" id="contact">
         <div class="row text-center">
             <div class="col">
@@ -511,7 +511,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-2">
+                    <div class="m-4">
+                        <form action="" method="POST">
+                            <div class="g-recaptcha" data-sitekey="6Lcm3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5mfX"></div>
+                        </form>
+                    </div>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                    <div class="row mt-2 mb-4">
                         <div class="col">
                             <button type="submit" class="btn btn-info text-center col-12">SUBMIT</button>
                         </div>
@@ -568,7 +574,7 @@
 </div>
 
 </div>
-<div class="container-fluid animate__animated animate__fadeInUp"></div>
+<div>
     <footer class="bg-dark text-light pt-4 ps-3 pe-3">
         <div class="container">
             <div class="row">
@@ -606,7 +612,7 @@
         </div>
         <div class="row">
             <div class="text-center text-lg-end">
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chevron-double-up h3"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#!" id="enlaceArriba" class="text-decoration-none"><i class="bi bi-chevron-double-up h3"></a></i>&nbsp;&nbsp;&nbsp;&nbsp;
                     <hr>
                 </p>
             </div>
@@ -685,6 +691,10 @@
             });
         }, { threshold: 0.5 });
         counters.forEach(counter => observer.observe(counter));
+    });
+    document.getElementById("enlaceArriba").addEventListener("click", function(event) {
+        event.preventDefault(); // Evita el cambio en la URL
+        document.getElementById("arriba").scrollIntoView({ behavior: "smooth" });
     });
 </script>
 </body>
